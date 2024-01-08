@@ -20,7 +20,7 @@ pycparser==2.21
 pyserial==3.5
 pyserial-asyncio==0.6
 typing_extensions==4.9.0
-universal-silabs-flasher==0.0.15
+universal-silabs-flasher==0.0.16
 voluptuous==0.14.1
 yarl==1.9.4
 zigpy==0.60.1
