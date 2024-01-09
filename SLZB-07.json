@@ -1,0 +1,42 @@
+{
+  "product_name": "SLZB-07",
+  "baudrates": {
+    "bootloader": [115200],
+    "cpc": [460800, 115200, 230400],
+    "ezsp": [115200],
+    "spinel": [460800]
+  },
+  "firmwares": [
+    {
+      "name": "Zigbee (EZSP)",
+      "url": "firmware/bin/slzb-07/ncp-uart-hw_115200.gbl",
+      "type": "ncp-uart-hw",
+      "version": "7.2.2.0"
+    },
+    {
+      "name": "Multi-PAN (RCP)",
+      "url": "firmware/bin/slzb-07/rcp-uart-hw-802154_460800.gbl",
+      "type": "rcp-uart-802154",
+      "version": "4.2.2"
+    },
+    {
+      "name": "OpenThread",
+      "url": "firmware/bin/slzb-07/ot-rcp_hw_460800.gbl",
+      "type": "ot-rcp",
+      "version": "2.2.2.0"
+    },
+    {
+      "name": "ZB Router",
+      "url": "firmware/bin/slzb-07/Z3RouterUSBDonlge_EZNet6.10.3_V1.0.0.gbl",
+      "type": "router",
+      "version": "1.0"
+    },
+    {
+      "name": "Unlock Bootloader",
+      "url": "firmware/bin/slzb-07/BTL_SLZB07.gbl",
+      "type": "bootloader",
+      "version": "1.0"
+    }
+  ],
+  "allow_custom_firmware_upload": true
+}

@@ -8,7 +8,7 @@
     />
     <meta
       name="Description"
-      content="Nabu Casa SkyConnect zigbee firmware flasher"
+      content="SLZB-07 zigbee firmware flasher"
     />
     <base href="/" />
 
@@ -49,17 +49,13 @@
   <body>
     <main>
       <h1>
-        <img
-          src="https://skyconnect.home-assistant.io/images/skyconnect-logo.png"
-          alt="SkyConnect logo"
-        />
-        Flasher
+      Flasher
       </h1>
 
-      <p>To get started, plug your SkyConnect into this computer.</p>
+      <p>To get started, plug your SLZB-07 into this computer.</p>
 
-      <nabucasa-zigbee-flasher manifest="./assets/manifests/skyconnect.json">
-        <span slot="button">Connect</span>
+      <nabucasa-zigbee-flasher manifest="https://darkxst.github.io/sl-web-tools/SLZB-07.json">
+        <span slot="button">Connect SLZB-07</span>
       </nabucasa-zigbee-flasher>
     </main>
 
@@ -68,7 +64,7 @@
         // In development we import locally.
         window.location.hostname === 'localhost'
           ? '/dist/web/nabucasa-zigbee-flasher.js'
-          : 'https://unpkg.com/@nabucasa/sl-web-tools@0.10.0/dist/web/nabucasa-zigbee-flasher.js?module'
+          : 'https://darkxst.github.io/sl-web-tools/dist/web/nabucasa-zigbee-flasher.js'
       );
     </script>
   </body>
