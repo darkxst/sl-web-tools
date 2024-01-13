@@ -21,7 +21,7 @@ async function readFile(file) {
     });
 }
 export async function parseFirmwareBuffer(pyodide, buffer) {
-    const { GBLImage } = pyodide.pyimport('universal_silabs_flasher.flasher');
+    const { GBLImage } = pyodide.pyimport('universal_silabs_flasher.firmware');
     return await GBLImage.from_bytes.callKwargs(pyodide.toPy(buffer), {});
 }
 let FirmwareSelector = class FirmwareSelector extends LitElement {
