@@ -108,7 +108,7 @@ export async function setupPyodide(
 
   //side-load universal-silabs-flasher
   const wheelPath =
-    './universal_silabs_flasher-0.0.16.post1+git.2c29b0f3.dirty-py3-none-any.whl';
+    './sl-web-tools/universal_silabs_flasher-0.0.16.post1+git.2c29b0f3.dirty-py3-none-any.whl';
   // const wheelPath = './universal_silabs_flasher-0.0.15-py3-none-any.whl';
 
   await micropip.install.callKwargs({
