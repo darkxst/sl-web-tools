@@ -31,7 +31,7 @@ export async function parseFirmwareBuffer(
   pyodide: Pyodide,
   buffer: ArrayBuffer
 ): Promise<GBLImage> {
-  const { GBLImage } = pyodide.pyimport('universal_silabs_flasher.flasher');
+  const { GBLImage } = pyodide.pyimport('universal_silabs_flasher.firmware');
 
   return await GBLImage.from_bytes.callKwargs(pyodide.toPy(buffer), {});
 }
